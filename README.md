@@ -1,4 +1,4 @@
-# Aplicação completa de acompanhamento de hábitos! Com direito a cadastro, login e muitas bibliotecas 🙂
+# Complete application of tracking habits! Entitled to registration, login and many libraries  🙂
 <p align="center">
 
 https://user-images.githubusercontent.com/80592317/171040201-56e472e1-a6b1-41f4-8872-182d8087d08f.mp4
