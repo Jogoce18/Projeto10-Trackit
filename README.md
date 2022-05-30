@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Aplicação completa de acompanhamento de hábitos! Com direito a cadastro, login e muitas bibliotecas 🙂
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
