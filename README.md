@@ -1,6 +1,5 @@
 # Aplicação completa de acompanhamento de hábitos! Com direito a cadastro, login e muitas bibliotecas 🙂
-
-             https://user-images.githubusercontent.com/80592317/171040201-56e472e1-a6b1-41f4-8872-182d8087d08f.mp4
+https://user-images.githubusercontent.com/80592317/171040201-56e472e1-a6b1-41f4-8872-182d8087d08f.mp4
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
