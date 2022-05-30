@@ -7,7 +7,7 @@ import ImageContext from "../contexts/ImageContext";
 import TodayHabitsContext from "../contexts/TodayHabitsContext";
 import PorcentContext from "../contexts/PorcentContext";
 import HabitsContext from "../contexts/HabitsContext";
-import UserContext from "../contexts/UserContext";
+
 
 import "./../css/reset.css"
 import "./../css/style.css"
@@ -16,22 +16,26 @@ import SignPage from "./SignPage";
 import Login from "./Login";
 import Habits from "./Habits";
 import Hojepage from "./Hojepage";
-import History from "./History";
+import History from "./Bonus";
 
 
 export default function App() {
 
   const tokenOnLocalStorage = localStorage.getItem("token");
   const imageOnLocalStorage = localStorage.getItem("image");
+
   const [porcent, setPorcent] = useLocalStorage("progress", 0);
   const [token, setToken] = useState(tokenOnLocalStorage);
   const [image, setImage] = useState(imageOnLocalStorage);
-  const [user, setUser] = useLocalStorage("user", null);
+
+
   const [habitsData, setHabitsData] = useLocalStorage("habitsData", null);
+  
   const [todayHabitsData, setTodayHabitsData] = useLocalStorage(
     "todayHabitsData",
     null
   );
+ 
   function setUToken(token) {
   setToken(token);
   localStorage.setItem("token", token);
@@ -40,15 +44,17 @@ export default function App() {
   setImage(image);
   localStorage.setItem("image", image);
   }
-  
+
+ 
 
   return (
     <TokenContext.Provider value={{token, setToken, setUToken}}>
+   
       <PorcentContext.Provider value={{ porcent, setPorcent }}>
         <ImageContext.Provider value={{image, setImage, setUImage}}>
           <TodayHabitsContext.Provider value={{ todayHabitsData, setTodayHabitsData }}>
            <HabitsContext.Provider value={{ habitsData, setHabitsData }}>
-           <UserContext.Provider value={{ user, setUser }}>
+           
               <BrowserRouter>
                   <Routes>
                     <Route path ='/' element ={<Login />}/>
@@ -58,12 +64,12 @@ export default function App() {
                     <Route path="/historico" element={<History />} />
                   </Routes>
               </BrowserRouter> 
-              </UserContext.Provider>
-             </HabitsContext.Provider>
+         
+             </HabitsContext.Provider>  
             </TodayHabitsContext.Provider>
           </ImageContext.Provider>
-
         </PorcentContext.Provider>
+
     </TokenContext.Provider>
   );
 

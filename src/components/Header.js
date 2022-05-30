@@ -4,11 +4,13 @@ import ImageContext from "../contexts/ImageContext";
 
 export default  function Header() {
     const {image} = useContext(ImageContext)
-  
+
     return (
         <Container >
-            <span>TrackIt</span>
+            <span>TrackIt </span>
             <img src={image} alt="profile" />
+            
+
         </Container>
     );
 }
@@ -38,5 +40,8 @@ const Container= styled.div`
         font-weight: 400;
         font-size: 38.982px;
         color: #FFFFFF;
+    }
+    nome {
+        color: #FFFFFF;  
     }
 `

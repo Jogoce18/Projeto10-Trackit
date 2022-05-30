@@ -65,6 +65,7 @@ export default function Login() {
                 />
                 <input 
                     type="password" 
+                    placeholder="Password"
                     disabled={dataLoading.loading} 
                     className={dataLoading.classNameLoading}  
                     value={password}

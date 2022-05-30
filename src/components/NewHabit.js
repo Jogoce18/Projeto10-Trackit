@@ -3,7 +3,7 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
 import TokenContext from "../contexts/TokenContext";
-
+import { sendAlert } from "./Alerts";
 function NewHabit({ formDisplayHidden, setFormDisplayHidden, listHabits }) {
   const [habit, setHabit] = useState({ name: "", days: [] });
   const [loading, setLoading] = useState(false);
@@ -28,7 +28,8 @@ function NewHabit({ formDisplayHidden, setFormDisplayHidden, listHabits }) {
     if (habit.days.length > 0) {
       setLoading(true);
     } else {
-      alert("Selecione pelo menos um dia da semana");
+     
+      sendAlert('error', '', 'Selecione pelo menos um dia da semana.')
       return;
     }
 
