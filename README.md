@@ -1,6 +1,7 @@
 # Aplicação completa de acompanhamento de hábitos! Com direito a cadastro, login e muitas bibliotecas 🙂
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/97575616/161644905-b0769d17-a61f-4f59-8c50-abb48e86db22.png" width="400px" alt="">
+
+https://user-images.githubusercontent.com/80592317/171040201-56e472e1-a6b1-41f4-8872-182d8087d08f.mp4
 </p>
 
 <h1 align="center">TrackIt</h1>
@@ -30,7 +31,6 @@
 ![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg)
 <!-- ![status-in-progress](https://user-images.githubusercontent.com/97575616/153774620-d6a0a615-9d38-4402-ae72-20c52f8bbd5c.svg) -->
 
-https://user-images.githubusercontent.com/80592317/171040201-56e472e1-a6b1-41f4-8872-182d8087d08f.mp4
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
